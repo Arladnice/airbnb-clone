@@ -56,7 +56,7 @@ const Modal: React.FC<ModalProps> = ({
     }
 
     secondaryAction();
-  }, []);
+  }, [secondaryAction, disabled]);
 
   useEffect(() => {
     setShowModal(isOpen);
